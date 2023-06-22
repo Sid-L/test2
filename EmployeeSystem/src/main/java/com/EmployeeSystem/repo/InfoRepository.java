@@ -2,7 +2,7 @@ package com.EmployeeSystem.repo;
 
 
 
-import com.EmployeeSystem.entity.*;
+import com.EmployeeSystem.entity.Info;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

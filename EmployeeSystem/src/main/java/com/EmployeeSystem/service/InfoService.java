@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.EmployeeSystem.dto.InfoForm;
-import com.EmployeeSystem.entity.Info;
 import com.EmployeeSystem.repo.InfoRepository;
+import com.EmployeeSystem.entity.Info;
 
 @Service
 public class InfoService {

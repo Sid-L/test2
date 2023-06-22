@@ -11,8 +11,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 import com.EmployeeSystem.entity.Info;
 import com.EmployeeSystem.service.InfoService;
+
+import jakarta.validation.Valid;
+
 import com.EmployeeSystem.dto.InfoForm;
 
 @Controller
@@ -28,7 +32,7 @@ public class InfoController {
 		infoForm.setId(infoService.getNewId());
 		model.addAttribute("infoForm", infoForm);
 
-		return "employeeInfo/infoAdd";
+		return "employeeUpdate/infoAdd";
 	}
 
 	@GetMapping("Upd/{employees_Id}")
@@ -36,34 +40,36 @@ public class InfoController {
 		InfoForm infoForm = infoService.getInfo(employees_Id);
 		model.addAttribute("infoForm", infoForm);
 
-		return "employeeInfo/infoUpdate";
+		return "employeeUpdate/infoUpdate";
 	}
 
 	@PostMapping("/add")
-	public String addInfo(@ModelAttribute InfoForm infoForm, BindingResult result, Model model) {
+	public String addInfo(@Validated @ModelAttribute InfoForm infoForm, BindingResult result, Model model) {
 
 		if (result.hasErrors()) {
-
+			
 			model.addAttribute("errors", result.getAllErrors());
 
-			return "employeeInfo/infoAdd";
-		}
+			return "employeeUpdate/infoAdd";
+			
+		}else {
 		infoService.addInfo(infoForm);
 
-		return "employeeInfo/backPage";
+		return "employeeUpdate/backPage";
+		}
 	}
 
 	@PostMapping("/update")
-	public String updateInfo(@Validated InfoForm infoForm, BindingResult result, Model model) {
+	public String updateInfo(@Validated @ModelAttribute InfoForm infoForm, BindingResult result, Model model) {
 		if (result.hasErrors()) {
 
 			model.addAttribute("errors", result.getAllErrors());
 
-			return "employeeInfo/infoUpdate";
+			return "employeeUpdate/infoUpdate";
 		}
 		infoService.updateInfo(infoForm);
 		
-		return "employeeInfo/backPage";
+		return "employeeUpdate/backPage";
 
 	}
 
