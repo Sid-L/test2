@@ -51,12 +51,12 @@ public class InfoController {
 			
 			model.addAttribute("errors", result.getAllErrors());
 
-			return "employeeUpdate/infoAdd";
+			return "employeeUpdate/employee_YM";
 			
 		}else {
 		infoService.addInfo(infoForm);
 
-		return "employeeUpdate/backPage";
+		return "employeeUpdate/employee_YM";
 		}
 	}
 
