@@ -44,11 +44,11 @@ public class Register_Update_Controller {
 		return "list";
 	}
 	
-	@GetMapping
+	/*@GetMapping
 	public String registerUpdateList(Model model)
 	{
 		return "list";
-	}
+	}*/
 	
 	@GetMapping("/form")
 	public String formPage(Model model)
