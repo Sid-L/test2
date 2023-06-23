@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.EmployeeSystem.dto.User;
-import com.EmployeeSystem.dto.UserMapper;
+import com.EmployeeSystem.repo.UserMapper;
 
 import jakarta.annotation.Resource;
 
@@ -16,6 +16,7 @@ public class UserController{
 	
 	@Autowired
 	UserMapper userMapper;
+	
 	 @PostMapping("/login")
 //	public User login(@RequestBody User user) {
 //	    User dbUser = userMapper.getUserByIdAndPassword(user.getId(),user.getPassword());
