@@ -4,9 +4,15 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @Entity
 public class Employee {
 	
+=======
+
+@Entity
+public class Employee {
+>>>>>>> e80da568a28bd6530bcbae25e2f7302cb0999bd9
 =======
 
 @Entity
