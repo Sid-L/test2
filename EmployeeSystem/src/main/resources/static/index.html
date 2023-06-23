@@ -132,7 +132,7 @@ function login() {
     }).then(res => res.text()).then(data => {       
         if (data === "manager_login_success") {
             alert("管理者ログイン成功");
-            location.href = 'employeeInfoList.html';
+            location.href = '/empl/Info';
         } else if (data === "user_login_success") {
             alert("ログイン成功");
             location.href = '/user.html';
