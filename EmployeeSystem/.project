@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>EmployeeSystem</name>
+=======
+	<name>test2_EmployeeSystem</name>
+>>>>>>> e80da568a28bd6530bcbae25e2f7302cb0999bd9
 	<comment></comment>
 	<projects>
 	</projects>
@@ -11,12 +15,20 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
+<<<<<<< HEAD
 			<name>org.springframework.ide.eclipse.boot.validation.springbootbuilder</name>
+=======
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+>>>>>>> e80da568a28bd6530bcbae25e2f7302cb0999bd9
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
+<<<<<<< HEAD
 			<name>org.eclipse.m2e.core.maven2Builder</name>
+=======
+			<name>org.springframework.ide.eclipse.boot.validation.springbootbuilder</name>
+>>>>>>> e80da568a28bd6530bcbae25e2f7302cb0999bd9
 			<arguments>
 			</arguments>
 		</buildCommand>
