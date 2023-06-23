@@ -26,7 +26,7 @@ public class AttendanceController {
             System.out.println(attendance.toString());
         }
         model.addAttribute("attendanceData", attendanceData);
-        return "aa/text"; // 返回逻辑视图名称
+        return "attendance/text"; // 返回逻辑视图名称
     }
     @PostMapping("/updateStatus")
     public ResponseEntity<String> updateAttendanceStatus(@RequestBody AttendanceDTO request) {
