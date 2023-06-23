@@ -1,4 +1,4 @@
-//社員情報登録・更新のENTITY 作成者：劉金澤
+//社員情報登録・更新　作成者：劉金澤
 package com.EmployeeSystem.entity;
 
 import java.io.Serializable;

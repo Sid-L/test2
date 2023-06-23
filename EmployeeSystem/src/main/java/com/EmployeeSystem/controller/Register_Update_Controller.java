@@ -3,7 +3,6 @@ package com.EmployeeSystem.controller;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -27,7 +26,6 @@ public class Register_Update_Controller {
 	
 	private final Attendance_Service attendance_service;
 	
-	@Autowired
 	public Register_Update_Controller(Attendance_Service attendance_service)
 	{
 		this.attendance_service = attendance_service;

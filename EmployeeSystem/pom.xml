@@ -8,12 +8,13 @@
 		<version>3.1.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.EmployeeSystem</groupId>
+	<groupId>com.Demo</groupId>
 	<artifactId>EmployeeSystem</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>EmployeeSystem</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
+		<jakarta-servlet.version>5.0.0</jakarta-servlet.version>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
@@ -122,15 +123,14 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-               
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<mainClass>com.EmployeeSystem.EmployeeApplication</mainClass>
 				</configuration>
-				
 			</plugin>
 		</plugins>
 	</build>

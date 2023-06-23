@@ -20,7 +20,7 @@ public class AttendanceController {
     private AttendanceService attendanceService;
 
     @GetMapping
-    public String getAttendanceDataForIdAndDate(@RequestParam("id") Integer id, @RequestParam("date") String date, Model model) {
+    public String getAttendanceDataForIdAndDate(@RequestParam Integer id, @RequestParam String date, Model model) {
         List<AttendanceDTO> attendanceData = attendanceService.getAttendanceDataForIdAndDate(id, date);
         for (AttendanceDTO attendance : attendanceData) {
             System.out.println(attendance.toString());

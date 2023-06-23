@@ -1,4 +1,4 @@
-//社員情報登録・更新Controller　作成者：劉金澤
+//社員情報登録・更新　作成者:劉金澤
 package com.EmployeeSystem.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +37,7 @@ public class InfoController {
 	}
 
 	@GetMapping("Upd/{employees_Id}")
-	public String displayAll(@PathVariable("employees_Id") int employees_Id, Info info, Model model) {
+	public String displayAll(@PathVariable int employees_Id, Info info, Model model) {
 		InfoForm infoForm = infoService.getInfo(employees_Id);
 		model.addAttribute("infoForm", infoForm);
 
@@ -51,12 +51,12 @@ public class InfoController {
 			
 			model.addAttribute("errors", result.getAllErrors());
 
-			return "employeeUpdate/employee_YM";
+			return "employeeUpdate/infoAdd";
 			
 		}else {
 		infoService.addInfo(infoForm);
 
-		return "employeeUpdate/employee_YM";
+		return "employeeUpdate/backPage";
 		}
 	}
 
