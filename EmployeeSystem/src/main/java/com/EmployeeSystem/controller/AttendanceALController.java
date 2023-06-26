@@ -16,7 +16,8 @@ import java.util.List;
 @Controller
 public class AttendanceALController {
 
-	@Autowired private AttendanceALService attendanceALService;
+	@Autowired
+	private AttendanceALService attendanceALService;
 
 
 	@GetMapping("/attendanceAL")
