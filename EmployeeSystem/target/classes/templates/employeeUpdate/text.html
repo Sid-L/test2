@@ -191,9 +191,9 @@ function approveSelected() {
 <body>
 <div class="selection-bar">
   <ul>
-    <li><a href="employee_info.html">社員情報</a></li>
+    <li><a href="/empl/Info">社員情報</a></li>
     <li><a href="attendance_info.html">勤怠情報</a></li>
-    <li><a href="attendance_approval.html">勤怠承認</a></li>
+    <li><a href="/attendanceAL">勤怠承認</a></li>
   </ul>
 </div>
 <div class="user-info">
@@ -206,7 +206,7 @@ function approveSelected() {
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
     <div style="margin-right: 20px; margin-top: 100px;">社員ID：[99999999]</div>
     <div class="right-buttons">
-      <button>戻る</button>
+      <button><a action>戻る</button>
       <button id="rejectButton" onclick="rejectSelected()" value="reject">却下</button>
       <button id="selectAllButton" onclick="selectAll()">一括選択　</button>
       <button id="approveButton" onclick="approveSelected()" value="approve">承認</button>
