@@ -14,9 +14,6 @@
       </list>
     </option>
   </component>
-  <component name="MavenRunner">
-    <option name="jreName" value="JavaSE-17" />
-  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_20" default="true" project-jdk-name="jdk20" project-jdk-type="JavaSDK" />
   <component name="SuppressionsComponent">
     <option name="suppComments" value="[]" />
